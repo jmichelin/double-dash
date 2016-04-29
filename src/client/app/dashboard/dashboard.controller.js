@@ -10,8 +10,8 @@
   function DashboardController($q, dataservice, logger) {
     var vm = this;
     vm.news = {
-      title: 'News Section',
-      description: 'This could be the timeline section'
+      title: 'Alerts Section',
+      description: 'Timely alerts on students/milestones etc'
     };
     vm.messageCount = 0;
     vm.people = [];
@@ -23,6 +23,14 @@
       var promises = [getMessageCount(), getPeople()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
+      });
+    }
+
+    function getCohorts() {
+      return dataservice.getCohorts().then(function(data) {
+        console.log('getCohorts data value dashboard.controller.js = > ', data);
+        vm.cohorts = data;
+        return vm.cohorts;
       });
     }
 
