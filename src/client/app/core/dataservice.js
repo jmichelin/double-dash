@@ -17,10 +17,19 @@
 
     return service;
 
+<<<<<<< 4fa7ceffa894319f6557c40d56c527629fc351ab
     function getMessageCount() {
       return $q.when(12);
     }
 
+=======
+    function getMessageCount() { return $q.when(12); }
+ /*
+ *
+ * Http Data Requests
+ *
+ */
+>>>>>>> [feature] added cohort data and mock data to server and client plus tests
     function getCohorts() {
       return $http.get('/api/cohorts')
         .then(success)
