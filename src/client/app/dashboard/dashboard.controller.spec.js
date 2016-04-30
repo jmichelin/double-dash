@@ -43,6 +43,7 @@ describe('DashboardController', function() {
       });
 
       it('should have at least 1 cohort', function() {
+        //console.log('controller.cohorts', controller.cohorts);
         expect(controller.cohorts).to.have.length.above(0);
       });
 
@@ -54,8 +55,13 @@ describe('DashboardController', function() {
         expect(controller.people).to.have.length.above(0);
       });
 
+<<<<<<< 19ebb514b0f4c1c84017f671611c8fa1f40c74de
       it('should have a zenQuote', function() {
         expect(controller.zenQuote).to.not.be.empty;
+=======
+      it('should have people count of 7', function() {
+        expect(controller.people).to.have.length(7);
+>>>>>>> [fix] adjusted data stream from api for specific teams
       });
 
       it('should have a zenQuote as a string', function() {
