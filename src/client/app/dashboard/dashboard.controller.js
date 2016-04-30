@@ -28,11 +28,15 @@
 
     function getCohorts() {
       return dataservice.getCohorts().then(function(data) {
+<<<<<<< 47637176503b9d8a0128e9cf6020d10753689465
 <<<<<<< 2cf7d7bbb959b6fccc199ec0c096c8c1a2860d7e
         //console.log('getCohorts data value dashboard.controller.js = > ', data);
 =======
         console.log('getCohorts data value dashboard.controller.js = > ', data);
 >>>>>>> [feature] added cohort data and mock data to server and client plus tests
+=======
+        //console.log('getCohorts data value dashboard.controller.js = > ', data);
+>>>>>>> [fix] adjusted data stream from api for specific teams
         vm.cohorts = data;
         return vm.cohorts;
       });

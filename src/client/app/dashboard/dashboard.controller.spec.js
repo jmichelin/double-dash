@@ -36,16 +36,24 @@ describe('DashboardController', function() {
         expect(controller.news).to.not.be.empty;
       });
 
+<<<<<<< 47637176503b9d8a0128e9cf6020d10753689465
 <<<<<<< 2cf7d7bbb959b6fccc199ec0c096c8c1a2860d7e
+=======
+>>>>>>> [fix] adjusted data stream from api for specific teams
       it('should have cohorts', function() {
         expect(controller.cohorts).to.not.be.empty;
       });
 
+<<<<<<< 47637176503b9d8a0128e9cf6020d10753689465
       it('should have at least 1 cohort', function() {
         //console.log('controller.cohorts', controller.cohorts);
 =======
       it('should have at least 1 cohort', function() {
 >>>>>>> [feature] added cohort data and mock data to server and client plus tests
+=======
+      it('should have at least 1 cohort', function() {
+        //console.log('controller.cohorts', controller.cohorts);
+>>>>>>> [fix] adjusted data stream from api for specific teams
         expect(controller.cohorts).to.have.length.above(0);
       });
 
@@ -57,6 +65,7 @@ describe('DashboardController', function() {
         expect(controller.people).to.have.length.above(0);
       });
 
+<<<<<<< 47637176503b9d8a0128e9cf6020d10753689465
 <<<<<<< 2cf7d7bbb959b6fccc199ec0c096c8c1a2860d7e
       it('should have people count of 7', function() {
         expect(controller.people).to.have.length(7);
@@ -64,6 +73,10 @@ describe('DashboardController', function() {
       it('should have people count of 8', function() {
         expect(controller.people).to.have.length(8);
 >>>>>>> [feature] added cohort data and mock data to server and client plus tests
+=======
+      it('should have people count of 7', function() {
+        expect(controller.people).to.have.length(7);
+>>>>>>> [fix] adjusted data stream from api for specific teams
       });
     });
   });
