@@ -20,7 +20,7 @@
     activate();
 
     function activate() {
-      var promises = [getMessageCount(), getPeople()];
+      var promises = [getMessageCount(), getPeople(), getCohorts()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
       });
@@ -28,7 +28,7 @@
 
     function getCohorts() {
       return dataservice.getCohorts().then(function(data) {
-        console.log('getCohorts data value dashboard.controller.js = > ', data);
+        //console.log('getCohorts data value dashboard.controller.js = > ', data);
         vm.cohorts = data;
         return vm.cohorts;
       });

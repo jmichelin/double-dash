@@ -17,11 +17,7 @@
     return service;
 
     function getMessageCount() { return $q.when(12); }
- /*
- *
- * Http Data Requests
- *
- */
+
     function getCohorts() {
       return $http.get('/api/cohorts')
         .then(success)

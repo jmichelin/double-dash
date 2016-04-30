@@ -36,7 +36,12 @@ describe('DashboardController', function() {
         expect(controller.news).to.not.be.empty;
       });
 
+      it('should have cohorts', function() {
+        expect(controller.cohorts).to.not.be.empty;
+      });
+
       it('should have at least 1 cohort', function() {
+        //console.log('controller.cohorts', controller.cohorts);
         expect(controller.cohorts).to.have.length.above(0);
       });
 
@@ -48,8 +53,8 @@ describe('DashboardController', function() {
         expect(controller.people).to.have.length.above(0);
       });
 
-      it('should have people count of 8', function() {
-        expect(controller.people).to.have.length(8);
+      it('should have people count of 7', function() {
+        expect(controller.people).to.have.length(7);
       });
     });
   });
