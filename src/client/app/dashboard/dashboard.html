@@ -37,10 +37,10 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr ng-repeat="c in vm.cohorts">
-                  <td><a href="{{c.id}}">{{c.name}}</a></td>
-                  <td>{{c.slug}}</td>
-                  <td>{{c.description}}</td>
+                <tr ng-repeat="cohort in vm.cohorts">
+                  <td><a ui-sref="cohort/{{c.id}}">{{cohort.name}}</a></td>
+                  <td>{{cohort.slug}}</td>
+                  <td>{{cohort.description}}</td>
                 </tr>
                 </tbody>
               </table>
