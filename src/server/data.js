@@ -1,6 +1,7 @@
 module.exports = {
   cohorts: getCohorts(),
-  people: getPeople()
+  people: getPeople(),
+  zenQuote: getZenQuote()
 };
 
 function getCohorts() {
@@ -192,4 +193,8 @@ function getPeople() {
     { id: 7, firstName: 'Haley', lastName: 'Guthrie', age: 35, location: 'Wyoming' },
     { id: 8, firstName: 'Aaron', lastName: 'Jinglehiemer', age: 22, location: 'Utah' }
   ];
+}
+
+function getZenQuote() {
+  return 'Responsive is better than fast.'
 }

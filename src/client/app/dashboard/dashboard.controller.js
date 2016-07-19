@@ -16,11 +16,12 @@
     vm.messageCount = 0;
     vm.people = [];
     vm.title = 'Dashboard';
+    vm.zenQuote = '';
 
     activate();
 
     function activate() {
-      var promises = [getMessageCount(), getPeople(), getCohorts()];
+      var promises = [getMessageCount(), getPeople(), getCohorts(), getZenQuote()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
       });

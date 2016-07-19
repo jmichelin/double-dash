@@ -1,4 +1,4 @@
-(function() {
+(function () {
   'use strict';
 
   angular
@@ -11,12 +11,15 @@
     var service = {
       getCohorts: getCohorts,
       getPeople: getPeople,
-      getMessageCount: getMessageCount
+      getMessageCount: getMessageCount,
+      getZenQuote: getZenQuote
     };
 
     return service;
 
-    function getMessageCount() { return $q.when(12); }
+    function getMessageCount() {
+      return $q.when(12);
+    }
 
     function getCohorts() {
       return $http.get('/api/cohorts')
@@ -43,6 +46,28 @@
 
       function fail(e) {
         return exception.catcher('XHR Failed for getPeople')(e);
+      }
+    }
+
+    function getZenQuote() {
+      let config = {
+        //params: data,
+        headers: {
+          'Accept': 'application/json',
+          'authorization': 'Basic am1pY2hlbGluOmczM2tmcjBudCEyMw=='
+        }
+      };
+
+      return $http.get('https://api.github.com/zen', config)
+        .then(success)
+        .catch(fail);
+
+      function success(response) {
+        return response.data;
+      }
+
+      function fail(e) {
+        return exception.catcher('XHR failed for getZenQuote')(e);
       }
     }
   }

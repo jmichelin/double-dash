@@ -3,6 +3,7 @@ describe('DashboardController', function() {
   var controller;
   var people = mockData.getMockPeople();
   var cohorts = mockData.getMockCohorts();
+  var zenQuote = mockData.getMockZenQuote();
 
   beforeEach(function() {
     bard.appModule('app.dashboard');
@@ -12,6 +13,7 @@ describe('DashboardController', function() {
   beforeEach(function() {
     sinon.stub(dataservice, 'getPeople').returns($q.when(people));
     sinon.stub(dataservice, 'getCohorts').returns($q.when(cohorts));
+    sinon.stub(dataservice, 'getZenQuote').returns($q.when(zenQuote));
     controller = $controller('DashboardController');
     $rootScope.$apply();
   });
@@ -78,6 +80,15 @@ describe('DashboardController', function() {
         expect(controller.people).to.have.length(7);
 >>>>>>> [fix] adjusted data stream from api for specific teams
       });
+
+      it('should have a zenQuote', function() {
+        expect(controller.zenQuote).to.not.be.empty;
+      });
+
+      it('should have a zenQuote as a string', function() {
+        expect(controller.zenQuote).to.be.a('string');
+      });
+
     });
   });
 });
