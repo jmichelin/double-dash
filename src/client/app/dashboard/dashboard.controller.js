@@ -29,6 +29,10 @@
 
     function getCohorts() {
       return dataservice.getCohorts().then(function(data) {
+<<<<<<< HEAD
+=======
+        //console.log('getCohorts data value dashboard.controller.js = > ', data);
+>>>>>>> 6544f1cbd128d0e88e0376ab0e78c5d16de7363a
         vm.cohorts = data;
         return vm.cohorts;
       });
