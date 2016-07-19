@@ -16,11 +16,12 @@
     vm.messageCount = 0;
     vm.people = [];
     vm.title = 'Dashboard';
+    vm.zenQuote = '';
 
     activate();
 
     function activate() {
-      var promises = [getMessageCount(), getPeople(), getCohorts()];
+      var promises = [getMessageCount(), getPeople(), getCohorts(), getZenQuote()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
       });
@@ -28,7 +29,10 @@
 
     function getCohorts() {
       return dataservice.getCohorts().then(function(data) {
+<<<<<<< HEAD
+=======
         //console.log('getCohorts data value dashboard.controller.js = > ', data);
+>>>>>>> 6544f1cbd128d0e88e0376ab0e78c5d16de7363a
         vm.cohorts = data;
         return vm.cohorts;
       });
