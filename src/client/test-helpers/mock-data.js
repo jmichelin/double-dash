@@ -261,7 +261,11 @@ var mockData = (function() {
 
 
   function getMockZenQuote() {
+<<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
     return 'Mock Quote.';
+=======
+    return 'Encourage flow.';
+>>>>>>> [feature] adds random zen quote from git to dashboard
   }
 
 })();

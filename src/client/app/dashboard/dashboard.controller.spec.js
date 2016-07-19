@@ -64,6 +64,13 @@ describe('DashboardController', function() {
 >>>>>>> [fix] adjusted data stream from api for specific teams
       });
 
+<<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
+=======
+      it('should have a zenQuote', function() {
+        expect(controller.zenQuote).to.not.be.empty;
+      });
+
+>>>>>>> [feature] adds random zen quote from git to dashboard
       it('should have a zenQuote as a string', function() {
         expect(controller.zenQuote).to.be.a('string');
       });

@@ -242,5 +242,9 @@ function getPeople() {
 }
 
 function getZenQuote() {
+<<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
   return 'This is a Mock Quote'
+=======
+  return 'Responsive is better than fast.'
+>>>>>>> [feature] adds random zen quote from git to dashboard
 }
