@@ -48,7 +48,7 @@
       });
     }
 
-    function getZenQuote() {
+    function getZenQuote() { //random zen quote from github
       return dataservice.getZenQuote().then(function(data) {
         vm.zenQuote = data;
         return vm.zenQuote;
