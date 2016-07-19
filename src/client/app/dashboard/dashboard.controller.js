@@ -47,5 +47,12 @@
         return vm.people;
       });
     }
+
+    function getZenQuote() {
+      return dataservice.getZenQuote().then(function(data) {
+        vm.zenQuote = data;
+        return vm.zenQuote;
+      });
+    }
   }
 })();
