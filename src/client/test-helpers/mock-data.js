@@ -3,7 +3,8 @@ var mockData = (function() {
   return {
     getMockCohorts: getMockCohorts,
     getMockPeople: getMockPeople,
-    getMockStates: getMockStates
+    getMockStates: getMockStates,
+    getMockZenQuote: getMockZenQuote
   };
 
   function getMockStates() {
@@ -116,4 +117,10 @@ var mockData = (function() {
       { firstName: 'Haley', lastName: 'Guthrie', age: 35, location: 'Wyoming' }
     ];
   }
+
+
+  function getMockZenQuote() {
+    return 'Encourage flow.';
+  }
+
 })();
