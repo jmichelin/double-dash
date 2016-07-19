@@ -267,3 +267,18 @@ The `blocks.router` module contains a routing helper module that assists in addi
 ## License
 
 MIT
+
+## Expected Git workflow
+##### Set upstream
+- `git remote add https://github.com/precoursedashboard/double-dash.git upstream`
+##### Common Workflow
+- `git checkout -featureBranch`
+-  *work*
+- `git add . && git commit -m "[taskType] adds feature"`
+- `git push origin featureBranch`
+- `git checkout dev`
+- `git merge featureBranch`
+- `git push origin dev`
+- *submit pull request*
+- *Rinse & Repeat*
+
