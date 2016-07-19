@@ -21,11 +21,7 @@
     activate();
 
     function activate() {
-<<<<<<< 19ebb514b0f4c1c84017f671611c8fa1f40c74de
       var promises = [getMessageCount(), getPeople(), getCohorts(), getZenQuote()];
-=======
-      var promises = [getMessageCount(), getPeople(), getCohorts()];
->>>>>>> [fix] adjusted data stream from api for specific teams
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
       });
