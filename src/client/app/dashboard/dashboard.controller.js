@@ -10,8 +10,8 @@
   function DashboardController($q, dataservice, logger) {
     var vm = this;
     vm.news = {
-      title: 'News Section',
-      description: 'This could be the timeline section'
+      title: 'Alerts Section',
+      description: 'Timely alerts on students/milestones etc'
     };
     vm.messageCount = 0;
     vm.people = [];
@@ -20,9 +20,17 @@
     activate();
 
     function activate() {
-      var promises = [getMessageCount(), getPeople()];
+      var promises = [getMessageCount(), getPeople(), getCohorts()];
       return $q.all(promises).then(function() {
         logger.info('Activated Dashboard View');
+      });
+    }
+
+    function getCohorts() {
+      return dataservice.getCohorts().then(function(data) {
+        //console.log('getCohorts data value dashboard.controller.js = > ', data);
+        vm.cohorts = data;
+        return vm.cohorts;
       });
     }
 
@@ -37,6 +45,13 @@
       return dataservice.getPeople().then(function(data) {
         vm.people = data;
         return vm.people;
+      });
+    }
+
+    function getZenQuote() { //random zen quote from github
+      return dataservice.getZenQuote().then(function(data) {
+        vm.zenQuote = data;
+        return vm.zenQuote;
       });
     }
   }

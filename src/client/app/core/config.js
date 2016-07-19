@@ -14,7 +14,7 @@
 
   var config = {
     appErrorPrefix: '[precoursedashboard Error] ',
-    appTitle: 'precoursedashboard'
+    appTitle: 'Pre-Course Tracking System'
   };
 
   core.value('config', config);

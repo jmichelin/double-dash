@@ -2,6 +2,7 @@
 describe('DashboardController', function() {
   var controller;
   var people = mockData.getMockPeople();
+  var cohorts = mockData.getMockCohorts();
 
   beforeEach(function() {
     bard.appModule('app.dashboard');
@@ -10,6 +11,7 @@ describe('DashboardController', function() {
 
   beforeEach(function() {
     sinon.stub(dataservice, 'getPeople').returns($q.when(people));
+    sinon.stub(dataservice, 'getCohorts').returns($q.when(cohorts));
     controller = $controller('DashboardController');
     $rootScope.$apply();
   });
@@ -34,11 +36,24 @@ describe('DashboardController', function() {
         expect(controller.news).to.not.be.empty;
       });
 
+      it('should have cohorts', function() {
+        expect(controller.cohorts).to.not.be.empty;
+      });
+
+      it('should have at least 1 cohort', function() {
+        //console.log('controller.cohorts', controller.cohorts);
+        expect(controller.cohorts).to.have.length.above(0);
+      });
+
+      it('should have cohort count of 7', function() {
+        expect(controller.cohorts).to.have.length(7);
+      });
+
       it('should have at least 1 person', function() {
         expect(controller.people).to.have.length.above(0);
       });
 
-      it('should have people count of 5', function() {
+      it('should have people count of 7', function() {
         expect(controller.people).to.have.length(7);
       });
     });
