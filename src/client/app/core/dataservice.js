@@ -21,11 +21,14 @@
       return $q.when(12);
     }
 
+<<<<<<< HEAD
  /*
  *
  * Http Data Requests
  *
  */
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
     function getCohorts() {
       return $http.get('/api/cohorts')
         .then(success)

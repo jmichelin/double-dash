@@ -55,22 +55,31 @@ describe('DashboardController', function() {
         expect(controller.people).to.have.length.above(0);
       });
 
+<<<<<<< HEAD
 <<<<<<< 19ebb514b0f4c1c84017f671611c8fa1f40c74de
       it('should have a zenQuote', function() {
         expect(controller.zenQuote).to.not.be.empty;
 =======
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
       it('should have people count of 7', function() {
         expect(controller.people).to.have.length(7);
 >>>>>>> [fix] adjusted data stream from api for specific teams
       });
 
+<<<<<<< HEAD
 <<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
 =======
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
       it('should have a zenQuote', function() {
         expect(controller.zenQuote).to.not.be.empty;
       });
 
+<<<<<<< HEAD
 >>>>>>> [feature] adds random zen quote from git to dashboard
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
       it('should have a zenQuote as a string', function() {
         expect(controller.zenQuote).to.be.a('string');
       });

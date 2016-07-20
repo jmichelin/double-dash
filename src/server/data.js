@@ -82,6 +82,7 @@ function getCohorts() {
       'url': 'https://api.github.com/teams/1994764',
       'members_url': 'https://api.github.com/teams/1994764/members{/member}',
       'repositories_url': 'https://api.github.com/teams/1994764/repos'
+<<<<<<< HEAD
     },
       {
         "name": "w.la.fellows",
@@ -224,6 +225,8 @@ function getCohorts() {
       'url': 'https://api.github.com/teams/1994764',
       'members_url': 'https://api.github.com/teams/1994764/members{/member}',
       'repositories_url': 'https://api.github.com/teams/1994764/repos'
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
     }
   ];
 }
@@ -242,9 +245,13 @@ function getPeople() {
 }
 
 function getZenQuote() {
+<<<<<<< HEAD
 <<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
   return 'This is a Mock Quote'
 =======
   return 'Responsive is better than fast.'
 >>>>>>> [feature] adds random zen quote from git to dashboard
+=======
+  return 'Responsive is better than fast.'
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
 }

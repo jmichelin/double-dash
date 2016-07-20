@@ -102,6 +102,7 @@ var mockData = (function() {
         'url': 'https://api.github.com/teams/1994764',
         'members_url': 'https://api.github.com/teams/1994764/members{/member}',
         'repositories_url': 'https://api.github.com/teams/1994764/repos'
+<<<<<<< HEAD
       },{
         "name": "w.la.fellows",
         "id": 1540144,
@@ -243,6 +244,8 @@ var mockData = (function() {
         'url': 'https://api.github.com/teams/1994764',
         'members_url': 'https://api.github.com/teams/1994764/members{/member}',
         'repositories_url': 'https://api.github.com/teams/1994764/repos'
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
       }
     ];
   }
@@ -261,11 +264,15 @@ var mockData = (function() {
 
 
   function getMockZenQuote() {
+<<<<<<< HEAD
 <<<<<<< 49ca5fcdc255732b343c10e323eb3466e9d57b7e
     return 'Mock Quote.';
 =======
     return 'Encourage flow.';
 >>>>>>> [feature] adds random zen quote from git to dashboard
+=======
+    return 'Encourage flow.';
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
   }
 
 })();

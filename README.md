@@ -272,7 +272,10 @@ MIT
 ##### Set upstream
 - `git remote add upstream https://github.com/precoursedashboard/double-dash.git `
 ##### Common Workflow
+<<<<<<< HEAD
 - `git pull --rebase upstream dev`
+=======
+>>>>>>> cb5f6f6dec7fdb7c7c210fbbbe44bc62ffcfc04f
 - `git checkout -featureBranch`
 -  *work*
 - `git add . && git commit -m "[taskType] adds feature"`
