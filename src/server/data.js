@@ -83,17 +83,6 @@ function getCohorts() {
       'members_url': 'https://api.github.com/teams/1994764/members{/member}',
       'repositories_url': 'https://api.github.com/teams/1994764/repos'
     },
-      {
-        "name": "w.la.fellows",
-      "id": 1540144,
-      "slug": "w-la-fellows",
-      "description": "",
-      "permission": "push",
-      "privacy": "secret",
-      "url": "https://api.github.com/teams/1540144",
-      "members_url": "https://api.github.com/teams/1540144/members{/member}",
-      "repositories_url": "https://api.github.com/teams/1540144/repos"
-    },
     {
       'name': 'R:MKS29.students',
       'id': 1805472,
@@ -205,16 +194,6 @@ function getCohorts() {
       'repositories_url': 'https://api.github.com/teams/1992997/repos'
     },
     {
-      "name": "MKS36",
-      "id": 1994764,
-      "slug": "mks36",
-      "description": "",
-      "permission": "pull",
-      "privacy": "closed",
-      "url": "https://api.github.com/teams/1994764",
-      "members_url": "https://api.github.com/teams/1994764/members{/member}",
-      "repositories_url": "https://api.github.com/teams/1994764/repos"
-    },{
       'name': 'MKS36',
       'id': 1994764,
       'slug': 'mks36',
