@@ -82,7 +82,6 @@ function getCohorts() {
       'url': 'https://api.github.com/teams/1994764',
       'members_url': 'https://api.github.com/teams/1994764/members{/member}',
       'repositories_url': 'https://api.github.com/teams/1994764/repos'
-<<<<<<< HEAD
     },
       {
         "name": "w.la.fellows",
