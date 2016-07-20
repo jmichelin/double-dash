@@ -4,7 +4,7 @@ A Dashboard to manage groups in a git hub group based on timelines.
 
 
 
->*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
+>* Based on Opinionated Angular style guide for teams by John Papa
 
 [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) 
 ## Prerequisites
