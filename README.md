@@ -270,7 +270,7 @@ MIT
 
 ## Expected Git workflow
 ##### Set upstream
-- `git remote add https://github.com/precoursedashboard/double-dash.git upstream`
+- `git remote add upstream https://github.com/precoursedashboard/double-dash.git `
 ##### Common Workflow
 - `git pull --rebase upstream dev`
 - `git checkout -featureBranch`
